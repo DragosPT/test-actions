@@ -20,11 +20,11 @@ jobs:
       - name: Run a multi-line script
         run: |
           mkdir docs
-          echo "Hello World" > docs/test.html
+          echo "Hello World" > docs/index.html
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3
         with:
-          path: docs/test.html
+          path: docs/index.html
           name: testreport
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
