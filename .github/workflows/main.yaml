@@ -11,10 +11,10 @@ jobs:
       - name: Run a multi-line script
         run: |
           mkdir docs
-          echo "Hello World" > docs/index.html
+          echo "main index" > docs/index.html
           mkdir docs/report
-          echo "Hello World" > docs/report/index.html
-          echo "report" > docs/report/report.html
+          echo "report index" > docs/report/index.html
+          echo "report subpage" > docs/report/report.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
