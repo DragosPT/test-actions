@@ -21,11 +21,9 @@ jobs:
         run: |
           mkdir docs
           echo "Hello World" > docs/index.html
-      - name: Archive code coverage results
-        uses: actions/upload-artifact@v3
-        with:
-          path: docs/index.html
-          name: testreport
+          mkdir docs/report
+          echo "Hello World" > docs/report/index.html
+          echo "report" > docs/report/report.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
